@@ -1,0 +1,24 @@
+{
+  "name": "nls",
+  "version": "1.0.0",
+  "description": "Network Light Server",
+  "main": "./lib/app.js",
+  "scripts": {
+    "start": "node ./lib/Server.js"
+  },
+  "private": true,
+  "author": "Graham Darnell <graham.darnell@linn.co.uk>",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^2.0.10"
+  },
+  "dependencies": {
+    "@types/node": "^6.0.48"
+  },
+  "optionalDependencies": {
+    "rpi-ws281x-native": "^0.8.1"
+  },
+  "files": [
+    "./lib/"
+  ]
+}

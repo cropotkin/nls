@@ -1,0 +1,7 @@
+lightstrip.txt
+lib/
+node_modules/
+.npm
+.vscode
+.env
+.vscode
