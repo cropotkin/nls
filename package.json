@@ -4,6 +4,7 @@
   "description": "Network Light Server",
   "main": "./lib/app.js",
   "scripts": {
+    "build": "tsc",
     "start": "node ./lib/Server.js"
   },
   "private": true,
