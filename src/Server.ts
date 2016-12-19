@@ -9,7 +9,7 @@ import LightStripDriverTest = require('./LightStripDriver/LightStripDriverTest')
 import Framer = require('./Buffers/Framer');
 import PromiseQueue = require('./Buffers/PromiseQueue');
 
-var driver : ILightStripDriver = new LightStripDriverWs281x();
+var driver : ILightStripDriver = new LightStripDriverWs281x(300);
 
 // var driver : ILightStripDriver = new LightStripDriverTest(20);
 
