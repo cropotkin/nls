@@ -9,7 +9,7 @@ import ILightStripDriver = require("./ILightStripDriver");
 class LightStripDriverWs281x implements ILightStripDriver {
     constructor() {
         this.info = new LightStripInfo("ws281x", 300, 100);
-        ws281x.reset();
+        ws281x.reset(300);
     }
 
     public info : ILightStripInfo;
@@ -23,7 +23,7 @@ class LightStripDriverWs281x implements ILightStripDriver {
     } 
 
     public close() : void {
-        ws281x.reset();
+        ws281x.reset(300);
     }
 }
 
