@@ -46,11 +46,11 @@ class Framer {
     }
 
     private collectWord() : number {
-        var value = this.collectByte();
-        value = value * 256 + this.collectByte();
-        value = value * 256 + this.collectByte();
-        value = value * 256 + this.collectByte();
-        return value;
+        var value1 = this.collectByte();
+        var value2 = this.collectByte();
+        var value3 = this.collectByte();
+        var value4 = this.collectByte();
+        return value1 << 24 | value2 << 16 | value3 << 8 | value4;
     }
 
     private collectByte() : number {
@@ -60,7 +60,7 @@ class Framer {
             this.partialConsumed = 0;
         }
 
-        return this.partialBuffer[this.partialConsumed++];
+        return this.partialBuffer.readUInt8(this.partialConsumed++);
     }
 }
 
