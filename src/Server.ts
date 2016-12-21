@@ -33,6 +33,7 @@ var server = Net.createServer(function(socket) {
 function fill() {
     frameQueue.read().then(v =>
     {
+        /*
         var line = "FRAME";
 
         for (var i = 0; i < 10; i++) {
@@ -41,7 +42,8 @@ function fill() {
         }
 
         console.log(line);
-
+        */
+        
         driver.render(v);
         fill();
     });
