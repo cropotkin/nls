@@ -5,12 +5,15 @@
   "main": "./lib/app.js",
   "scripts": {
     "build": "tsc",
-    "start": "node ./lib/Server.js"
+    "start": "node ./lib/Server.js",
+    "test": "mocha ./lib/Tests --recursive"
   },
   "private": true,
   "author": "Graham Darnell <graham.darnell@linn.co.uk>",
   "license": "ISC",
   "devDependencies": {
+    "mocha": "^3.2.0",
+    "@types/mocha": "^2.2.34",
     "typescript": "^2.0.10"
   },
   "dependencies": {
