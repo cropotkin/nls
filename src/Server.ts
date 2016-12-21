@@ -11,6 +11,8 @@ import PromiseQueue = require('./Buffers/PromiseQueue');
 
 var driver : ILightStripDriver = new LightStripDriverWs281x(300);
 
+driver.setBrightness(20);
+
 // var driver : ILightStripDriver = new LightStripDriverTest(20);
 
 var frameQueue = new PromiseQueue<Uint32Array>(); 
